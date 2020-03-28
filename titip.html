@@ -1,0 +1,235 @@
+ // $(".paket").click(function(){
+            //     let paket = $("input[name='selectPaket']:checked").val()
+            //     let packet_id = $("input[name='selectPaket']:checked").attr("target")
+            //     let price = parseInt($("input[name='selectPaket']:checked").attr("price"))
+            //     $("#paket").val(paket)
+            //     $("#packet_id").val(packet_id)
+            //     $("#purchase").val(price)
+            //     var user_city = parseInt($("#user_city").val()) 
+            //     var jumlah = parseInt($("#total_booking").val())
+            //     var discount = parseInt($("#totaldiscount").val())
+            //     var shippings = parseInt($("#shipping_charge").val())
+            //     var total_snack = parseInt($("#snack").val())
+
+                
+            //     const total_product = jumlah * price || '-';
+
+            //     if (total_snack) {
+                    
+            //         if (discount) {
+            //             var total = jumlah * price + shippings + total_snack - discount || '-';
+            //         } else {
+            //             var total = jumlah * price + shippings + total_snack || '-';
+            //         }
+            //     }
+            //     else{
+            //         if (discount) {
+            //             var total = jumlah * price + shippings - discount || '-';
+            //         } else {
+            //             var total = jumlah * price + shippings || '-';
+            //         }
+                    
+            //     }
+
+            //     $("#total_product").val(total_product)
+            //     $("#total").val(total)
+                
+            // });
+
+            // $(".perhitungan").keyup(function(){
+			// 		var user_city = parseInt($("#user_city").val()) 
+			// 		var jumlah = parseInt($("#total_booking").val())
+			// 		var harga = parseInt($("#purchase").val())
+			// 		var shippings = parseInt($("#shipping_charge").val())
+			// 		var total_snack = parseInt($("#snack").val())
+            //         var discount = parseInt($("#totaldiscount").val())
+
+					
+			// 		const total_product = harga * jumlah || '-';
+
+			// 		if (total_snack) {
+            //             if (discount) {
+            //                 var total = harga * jumlah + shippings + total_snack - discount || '-';
+            //             } else {
+            //                 var total = harga * jumlah + shippings + total_snack || '-';
+            //             }
+						
+			// 		}else{
+            //             if (discount) {
+            //                 var total = harga * jumlah + shippings - discount || '-';
+            //             } else {
+            //                 var total = harga * jumlah + shippings || '-';
+            //             }
+						
+			// 		}
+
+			// 		$("#total_product").val(total_product)
+			// 		$("#total").val(total)
+					
+			// 		$('.cities').click( function() {
+			// 			var city = parseInt($("#cities").val())
+			// 			var total_snack = parseInt($("#snack").val())
+            //             var discount = parseInt($("#totaldiscount").val())
+
+			// 			if (city == user_city) {
+			// 				var shipping = parseInt($("#shipping_in").val())
+			// 			}else{
+			// 				var shipping = parseInt($("#shipping_out").val())
+			// 			}
+							
+			// 			$("#shipping_charge").val(shipping)
+						
+			// 			if (total_snack) {
+            //                 if (discount) {
+            //                     var total = harga * jumlah + shipping + total_snack - discount || '-';
+            //                 } else {
+            //                     var total = harga * jumlah + shipping + total_snack || '-';
+            //                 }
+							
+			// 			}else{
+            //                 if (discount) {
+            //                     var total = harga * jumlah + shipping - discount || '-';
+            //                 } else {
+            //                     var total = harga * jumlah + shipping || '-';
+            //                 }
+							
+			// 			}
+			// 			$("#total").val(total)
+			// 		});
+			// 		$(".snack").click(function(){
+			// 			var favorite = [];
+			// 			$.each($("input[name='snack']:checked"), function(){            
+			// 				favorite.push(parseInt($(this).val()));
+			// 			});
+			// 			var id_snack = [];
+			// 			$.each($("input[name='snack']:checked"), function(){            
+			// 			    id_snack.push(parseInt(document.getElementById($(this).val()).getAttribute("target")));
+			// 			});
+			// 			$("#snack_id").val(id_snack)
+			// 			var total_snack = 0;
+			// 			for(i = 0; i <favorite.length; i++){
+			// 				total_snack += favorite[i];
+			// 			}
+			// 			$("#snack").val(total_snack)
+			// 			$('#modal-booking').modal('hide');
+						
+			// 			// alert("My favourite sports are: " + );
+			// 			var jumlah = parseInt($("#total_booking").val())
+			// 			var harga = parseInt($("#purchase").val())
+			// 			var shippings = parseInt($("#shipping_charge").val())
+            //             var discount = parseInt($("#totaldiscount").val())
+            //             if (discount) {
+            //                 var total = harga * jumlah + shippings + total_snack - discount || '-';
+            //             } else {
+            //                 var total = harga * jumlah + shippings + total_snack || '-';
+            //             }
+						
+			// 			$("#total").val(total)
+			// 		});
+			// 	});
+			
+			// 		$('.cities').click( function() {
+			// 			var harga = parseInt($("#purchase").val())
+			// 			var user_city = parseInt($("#user_city").val())
+			// 			var city = parseInt($("#cities").val())
+
+			// 			if (city == user_city) {
+			// 				var shipping = parseInt($("#shipping_in").val())
+			// 			}else{
+			// 				var shipping = parseInt($("#shipping_out").val())
+			// 			}
+							
+			// 			$("#shipping_charge").val(shipping)
+			// 		});
+			// 		$(".snack").click(function(){
+			// 			var favorite = [];
+			// 			$.each($("input[name='snack']:checked"), function(){            
+			// 				favorite.push(parseInt($(this).val()));
+			// 			});
+			// 			var id_snack = [];
+			// 			$.each($("input[name='snack']:checked"), function(){            
+			// 			    id_snack.push(parseInt(document.getElementById($(this).val()).getAttribute("target")));
+			// 			});
+			// 			$("#snack_id").val(id_snack)
+			// 			var total_snack = 0;
+			// 			for(i = 0; i <favorite.length; i++){
+			// 				total_snack += favorite[i];
+			// 			}
+			// 			$("#snack").val(total_snack)
+			// 			$('#modal-booking').modal('hide');
+						
+			// 			// alert("My favourite sports are: " + );
+			// 			var jumlah = parseInt($("#total_booking").val())
+			// 			var harga = parseInt($("#purchase").val())
+			// 			var shippings = parseInt($("#shipping_charge").val())
+            //             if (discount) {
+            //                 var total = harga * jumlah + shippings + total_snack - discount || '-';
+            //             } else {
+            //                 var total = harga * jumlah + shippings + total_snack || '-';
+            //             }
+			// 			$("#total").val(total)
+			// 		});
+			// 		$('.promoss').click(function() {
+
+			// 		var kode = $("#kodepromo").val() || '-'
+			// 		var user_id = $("#user_id").val()
+
+			// 			$.ajax({
+
+			// 				type:"GET",
+			// 				url:"/partnercari/"+kode,
+			// 				success: function(data) {
+			// 					var totald = data.code || '-';
+            //                     let promo_id = data.id;
+			// 					var totalt = data.type;
+			// 					var totalp = data.discount_amount;
+                                
+            //                     $("#promo_id").val(promo_id)
+			// 					// jumlah pemesanan
+			// 					var jumlah = parseInt($("#total_booking").val())
+			// 					// harga paket
+			// 					var harga = parseInt($("#purchase").val())
+			// 					// harga ongkir
+			// 					var shippings = parseInt($("#shipping_charge").val())
+			// 					// harga snack
+			// 					var total_snack = parseInt($("#snack").val())
+			// 					// subtotal
+			// 					var subtotal = parseInt($("#total_product").val())
+			// 					if (totald === '-') {
+            //                         Swal.fire({
+			// 							type: 'error',
+			// 							title: 'Promo diskon tidak ada.'
+			// 						})
+			// 					}else{
+
+			// 						if (totalt === 'price') {
+			// 							// jumlah diskon
+			// 							$("#totaldiscount").val(totalp)
+			// 							if (total_snack) {
+			// 								var total = harga * jumlah + shippings + total_snack - totalp;
+			// 							}else{
+			// 								var total = harga * jumlah + shippings - totalp || '-';
+			// 							}
+			// 							$("#total").val(total)
+			// 						} else {		
+			// 							// jumlah diskon
+			// 							$("#totaldiscount").val(`${totalp}%`)
+			// 							if (total_snack) {
+			// 								// alert("My input has a value!");
+			// 								var total = harga * jumlah + shippings + total_snack - (harga * totalp / 100) || '-';
+			// 							}else{
+			// 								var total = harga * jumlah + shippings - (harga * totalp / 100) || '-';
+			// 							}
+			// 							$("#total").val(total)
+			// 						}
+            //                         Swal.fire({
+			// 							type: 'success',
+			// 							title: 'Selamat anda mendapatkan diskon.'
+			// 						})	
+			// 					}
+								
+			// 				}
+			// 			});
+			// 		// To Stop the loading of page after a button is clicked
+			// 		return false;
+			// 	});
